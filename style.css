@@ -16,6 +16,7 @@ body{
     background-position: center;
     padding: 10px 8%;
     position: relative;
+    /* text-align: center; */
 }
 nav{
     display: flex;
@@ -59,10 +60,12 @@ select option{
     margin-top:100px ;
 }
 .header-content h1{
+    /* display: inline; */
     font-size: 60px;
     line-height: 70px;
     font-weight: 700;
     max-width: 650px;
+    text-align: center;
 }
 .header-content h3{
     font-weight: 400;
@@ -75,6 +78,7 @@ select option{
     align-items: center;
     margin-top: 30px;
     overflow: hidden;
+    flex-shrink: 1;
 }
 .sign-up span{
     position: relative;
@@ -320,10 +324,29 @@ select option{
     .card-2{
          flex: 1 1 calc(50% - 20px);
     }
+
 }
 @media screen and (max-width: 768px) {
     .card-2 {
         flex: 1 1 100%;
+    }
+    .sign-up button{
+        flex-shrink: 1;
+        font-size: 20px;
+    }
+    .sign-up2{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-up2 input{
+        width: 100% !important;
+    }
+    .sign-up2 button{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .header-content .sign-up {
+        height: 40px !important;
     }
 }
 @media screen and (max-width:650px){

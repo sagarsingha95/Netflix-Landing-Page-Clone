@@ -22,9 +22,8 @@
             <h1>Unlimited movies, TV shows and more</h1>
             <h3>Starts at ₹149. Cancel at any time.</h3>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form class="sign-up">
-                <input type="text" placeholder="">
-                <span>Email</span>
+            <form class="sign-up" onsubmit="event.preventDefault()">
+                <input type="text" placeholder="Email">
                 <button type="submit">Get Started</button>
             </form>
         </div>
@@ -162,7 +161,7 @@
     </div>
     <div class="container-3">
         <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        <form class="sign-up2">
+        <form class="sign-up2" onsubmit="event.preventDefault()">
             <input type="text" placeholder="email">
             <button>Get Started ></button>
         </form>

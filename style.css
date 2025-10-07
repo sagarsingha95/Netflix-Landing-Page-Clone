@@ -80,17 +80,6 @@ select option{
     overflow: hidden;
     flex-shrink: 1;
 }
-.sign-up span{
-    position: relative;
-    left: -420px;
-    color: black;
-    z-index: 1;
-    font-size: 20px;
-}
-.sign-up input:focus~span{
-    transform: translateY(-15px) scale(0.5);
-    transition: transform 0.3s ease-in-out;
-}
 .sign-up input{
     position: relative;
     flex: 1;
@@ -254,6 +243,7 @@ select option{
     background-color: #000;
     outline-offset: 4px;  
     /* outline: 1px solid white; */
+    color: white;
     border: 1px solid white;
 }
 .container-3 .sign-up2{
@@ -328,12 +318,27 @@ select option{
 
 }
 @media screen and (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: column !important;
+        gap: 20px;
+        /* margin-bottom: 20px; */
+    }
     .card-2 {
         flex: 1 1 100%;
     }
+    .header-content{
+        top: 240px;
+        /* margin-top: 20px; */
+    }
+
+    .header-content h1{
+        font-size: 30px !important;
+        line-height: 42px;
+    }
     .sign-up button{
         flex-shrink: 1;
-        font-size: 12px;
+        font-size: 10px;
     }
     .sign-up2{
         display: flex;
@@ -343,11 +348,16 @@ select option{
         width: 100% !important;
     }
     .sign-up2 button{
-        width: 30%;
+        width:70%;
         margin-top: 20px;
+        height: 50px;
+        padding: 9px;
     }
     .header-content .sign-up {
         height: 40px !important;
+    }
+    .enquiry h3{
+        font-size: 15px;
     }
 }
 @media screen and (max-width:650px){

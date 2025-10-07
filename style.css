@@ -107,6 +107,7 @@ select option{
     font-size: 16px;
     cursor: pointer;
     padding: 15px 30px;
+    width: 30%;
 }
 
 
@@ -332,7 +333,7 @@ select option{
     }
     .sign-up button{
         flex-shrink: 1;
-        font-size: 20px;
+        font-size: 12px;
     }
     .sign-up2{
         display: flex;
@@ -342,7 +343,7 @@ select option{
         width: 100% !important;
     }
     .sign-up2 button{
-        width: 50%;
+        width: 30%;
         margin-top: 20px;
     }
     .header-content .sign-up {
